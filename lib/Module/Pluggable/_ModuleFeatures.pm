@@ -29,6 +29,8 @@ our %FEATURES = (
             can_add_multiple_handlers_from_a_plugin => 0,
         },
     },
+);
+
 1;
 # ABSTRACT: Features declaration for Module::Pluggable
 
