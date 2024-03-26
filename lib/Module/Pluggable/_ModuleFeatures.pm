@@ -13,16 +13,19 @@ use warnings;
 
 our %FEATURES = (
     module_v => 5.2,
+    set_v => {
+        PluginSystem => 2,
+    },
     features => {
         PluginSystem => {
             can_let_plugin_contain_multiple_handlers => 1,
 
-            can_let_plugin_skip_event => 0,
+            can_let_plugin_skip_hook => 0,
             can_let_plugin_skip_other_plugins => 0,
-            can_let_plugin_repeat_event => 0,
+            can_let_plugin_repeat_hook => 0,
             can_let_plugin_repeat_other_plugins => 0,
 
-            can_put_handler_in_other_events => 0,
+            can_put_handler_in_other_hook => 0,
             can_handler_priority => 0,
             can_customize_handler_priority => 0,
             can_plugin_configuration => 1,
